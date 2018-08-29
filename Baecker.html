@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+ 
+    <meta charset="UTF-8" />
+	<link rel="stylesheet" type="text/css"
+								href="pizza.css"/>
+    <title>Baecker</title>
+  </head>
+
+  <body id="body" onload="Initialisieren();">
+  
+  <script src="bestellen.js"> </script>
+    <article class="Hauptmenue">
+	
+      <header><h1>Baecker</h1></header>
+	  <form action="https://www.fbi.h-da.de/cgi-bin/Echo.pl" id="formbaecker" accept-charset="UTF-8" method="get">
+	    <table class="Baeckerstatus">
+	      <tr>
+		    <th></th>
+		    <th>bestellt</th>
+		    <th>im Ofen</th>
+		    <th>fertig</th>		 
+		  </tr>
+	      <tr>
+			<td>Margherita</td>
+		    <td><input type="radio" name="test1" onclick="document.forms['formbaecker'].submit();" value="1" checked /></td>
+		    <td><input type="radio" name="test1" onclick="document.forms['formbaecker'].submit();" value="2" /></td>
+		    <td><input type="radio" name="test1" onclick="document.forms['formbaecker'].submit();" value="3" /></td>
+		  </tr>
+		  <tr>
+			<td>Salami</td>
+		    <td><input type="radio" name="test2" onclick="document.forms['formbaecker'].submit();" value="1" checked /></td>
+		    <td><input type="radio" name="test2" onclick="document.forms['formbaecker'].submit();" value="2" /></td>
+		    <td><input type="radio" name="test2" onclick="document.forms['formbaecker'].submit();" value="3" /></td>
+		  </tr>
+		  <tr>
+			<td>Hawaii</td>
+		    <td><input type="radio" name="test3" onclick="document.forms['formbaecker'].submit();" value="1" checked /></td>
+		    <td><input type="radio" name="test3" onclick="document.forms['formbaecker'].submit();" value="2" /></td>
+		    <td><input type="radio" name="test3" onclick="document.forms['formbaecker'].submit();" value="3" /></td>
+		  </tr>
+	    </table>
+	  </form>
+    </article>
+  </body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+	<link rel="stylesheet" type="text/css"
+								href="pizza.css"/>
+    <title>Kunde</title>
+  </head>
+
+  <body id="body" onload="Initialisieren();">
+  <script src="bestellen.js"> </script>
+	
+	
+    <article class="Hauptmenue">
+      <header><h1>Kunde</h1></header>
+	    <form action="https://www.fbi.h-da.de/cgi-bin/Echo.pl" id="form1" accept-charset="UTF-8" method="get">
+	      <table class="Baeckerstatus">
+	        <tr>	
+		      <th></th>
+		      <th>bestellt</th>
+		      <th>im Ofen</th>
+		      <th>fertig</th>
+		      <th>unterwegs</th>
+		    </tr>
+	        <tr>
+			  <td>Margherita</td>
+		      <td><input type="radio" name="kunde1" value="1" checked disabled /></td>
+		      <td><input type="radio" name="kunde1" value="2" disabled /></td>
+		      <td><input type="radio" name="kunde1" value="3" disabled /></td>
+		      <td><input type="radio" name="kunde1" value="4" disabled /></td>
+		    </tr>
+		    <tr>
+			  <td>Salami</td>
+		      <td><input type="radio" name="kunde2" value="1" checked disabled /></td>
+		      <td><input type="radio" name="kunde2" value="2" disabled /></td>
+		      <td><input type="radio" name="kunde2" value="3" disabled /></td>
+		      <td><input type="radio" name="kunde2" value="4" disabled /></td>
+		    </tr>
+		    <tr>
+		      <td>Hawaii</td>
+		      <td><input type="radio" name="kunde3" value="1" checked disabled /></td>
+		      <td><input type="radio" name="kunde3" value="2" disabled /></td>
+		      <td><input type="radio" name="kunde3" value="3" disabled /></td>
+		      <td><input type="radio" name="kunde3" value="4" disabled /></td>
+		    </tr>
+	      </table>
+	    </form>
+	  <a href="Bestellen.php">Neue Bestellung</a>
+    </article>
+  </body>
+</html>

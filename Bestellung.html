@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+	<link rel="stylesheet" type="text/css" href="pizza.css"/>
+    <title>Bestellung</title>
+  </head>
+  <body id="body" onload="Initialisieren();">
+	<script src="bestellen.js"> </script>
+	<article>
+	  <Header><h1>Bestellung!</h1></header>
+      <section class="Hauptmenue">
+  	    <table class="Pizzen">
+	      <tr>
+			<td><input type="image" src="pizza1.png" width="50" height="50" onclick="bestellung('Margherita');"/></td>
+			<td>Margherita <span id="Margherita">4.00</span>€</td>
+		  </tr>
+		  <tr>
+			<td><input type="image" src="pizza1.png" width="50" height="50" onclick="bestellung('Salami');"/></td>
+			<td>Salami <span id="Salami">4.50</span>€</td>
+		  </tr>
+		  <tr>  
+			<td><input type="image" src="pizza1.png" width="50" height="50" onclick="bestellung('Hawaii');"/></td>
+            <td>Hawaii <span id="Hawaii">5.00</span>€</td>			
+		  </tr>
+	    </table>	 
+      </section>
+	  <section class="Warenkorb">
+		<select id = "Warenkorbselect"  size="5" multiple ></select>  
+		<p><span id="preis">0.00</span>€</p>
+		<form action="https://www.fbi.h-da.de/cgi-bin/Echo.pl" id="form1" accept-charset="UTF-8" method="post">
+	      <input type="text" id="Addr" name="Adresse" value="" onkeyup="check();" placeholder="Ihre Adresse"  />
+	      <input type="reset" name="alldelete" value="alle Loeschen" onclick="alleloeschen();" />
+	      <input type="button" name="delete" value="Auswahl Löschen" onclick="loeschen();" />
+	      <input type="submit" id="Bestellen" name="order" value="Bestellen" />
+		</form>
+	  </section>
+	</article>
+  </body>
+</html>
