@@ -1,0 +1,12 @@
+/*Design*/
+body { color: black; background-color: white; font:1em Verdana;}
+footer, header {color : black;Background-color: blue;text-align:center;}
+/*Layout*/
+body {min-width:25em;}
+header {clear:both;}
+div {padding-bottom:1em;}
+.Hauptmenue {float:left;margin-right:20%;min-width:10em;}
+.Warenkorb {float:none;min-width:10em;}	
+table {border: 0.1em solid black; border-collapse:collapse; margin-left:0.5em; display: inline-block;}
+th, tr {border: 0.1em solid black; border-collapse:collapse; margin-left:0.5em;}
+select {width: 15em;}
